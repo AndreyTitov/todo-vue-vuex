@@ -90,7 +90,6 @@ export default {
                 this.toDoTarget = '';
                 this.showErr = false;
             }
-
         },
     }
 }
@@ -148,6 +147,7 @@ export default {
     .bounce-leave-active {
       animation: bounce-in .5s reverse;
     }
+    
     @keyframes bounce-in {
       0% {
         transform: scale(0);

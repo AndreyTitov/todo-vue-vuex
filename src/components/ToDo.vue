@@ -78,6 +78,7 @@ export default {
         &-button {
             &-wrapper {
                 margin: 20px 0;
+                position: relative;
             }
 
             &-done {
@@ -101,6 +102,7 @@ export default {
                 border-radius: 15px;
                 border: none;
                 cursor: pointer;
+                z-index: 2;
             }
         }
     }
@@ -111,7 +113,10 @@ export default {
     }
 
     .disableButton {
-        display: none;
+        position: absolute;
+        left: -100%;
+        animation: dissapear .5s ease;
+        z-index: 1;
     }
 
     // Animation
@@ -119,12 +124,23 @@ export default {
       display: inline-block;
       margin-right: 10px;
     }
+
     .list-enter-active, .list-leave-active {
       transition: all 1s;
     }
+
     .list-enter, .list-leave-to {
       opacity: 0;
       transform: translateY(30px);
     }
     // ../Animation
+
+    @keyframes dissapear {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: -100%;
+        }
+    }
 </style>
