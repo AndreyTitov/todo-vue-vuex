@@ -1,9 +1,6 @@
 # Todo
 
-## Link for preview
-[Link](https://andreytitov.github.io/todo-vue-vuex/dist/index.html).
-
-
+[Link for preview](https://andreytitov.github.io/todo-vue-vuex/dist/index.html)
 
 ## Project setup
 ```
